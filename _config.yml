@@ -44,7 +44,6 @@ include: ['aa274a_aut2021', 'aa274a_aut2122', 'aa274a_aut2223']
 
 
 collections:
-  # AA 203 file locations.
   aa274a_aut2021:
     output: false
     permalink: /:collection/:title/
