@@ -64,15 +64,6 @@ td > a, td > a:hover {
 
 }
 
-li > a:link, li > a:active, li > a:focus {
-  color: #2864B7 !important;
-
-}
-li > a, li > a:hover {
-  color: #2864B7 !important;
-
-}
-
 /*.navbar-default .navbar-nav > li > a {
   color: #222 !important;
 }
