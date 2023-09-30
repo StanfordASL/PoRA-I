@@ -4,7 +4,7 @@ seq_number: 1
 posted_date:   2023-09-29 13:00:00
 due_date:   2023-10-13 23:59:59
 pdf_link: "pdfs/homework/hw1.pdf"
-code_link: "https://github.com/StanfordASL/AA274a-HW1"
+code_link: "https://github.com/StanfordASL/AA174a-HW1"
 md_group: "assignments"
 ---
 
