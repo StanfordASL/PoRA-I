@@ -8,8 +8,6 @@ code_link: "https://github.com/StanfordASL/AA174a-HW2"
 md_group: "assignments"
 ---
 
-The goal of this homework is to familiarize you with algorithms for path planning in constrained environ-
-ments (e.g. in the presence of obstacles) and techniques to integrate planning with trajectory generation
-and control. Please read the homework carefully.
+The goal of this homework is to familiarize you with algorithms for path planning in constrained environments (e.g. in the presence of obstacles) and techniques to integrate planning with trajectory generation and control. Please read the homework carefully.
 
 Feel free to use this [Latex template](pdfs/homework/hw.tex).
