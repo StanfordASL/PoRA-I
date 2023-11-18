@@ -2,7 +2,7 @@
 title:  "Homework #4 (Part 1)"
 seq_number: 4
 posted_date:   2023-11-03 11:59:00
-due_date:   2023-11-17 23:59:59
+due_date:   2023-11-21 23:59:59
 pdf_link: "pdfs/homework/hw4_part_1.pdf"
 md_group: "assignments"
 ---
