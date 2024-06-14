@@ -21,3 +21,5 @@ Follow the same development guide [here](https://github.com/StanfordASL/Stanford
     to include new materials / logistics / etc. Use `rake preview` to test
     out website changes locally.
 
+5. Link the latest course webpage to previous quarter pages. See 
+    [this](aa274a_aut2324/index.html#L162) for example.
