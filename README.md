@@ -17,7 +17,7 @@ Follow the same development guide [here](https://github.com/StanfordASL/Stanford
     ([here](_config.yml#L43) and [here](_config.yml#L46-L61)) and edit the 
     root [`index.html`](index.html#L2) to redirect homepage to the new quarter.
 
-4. Edit everything inside the new quarter folder (e.g. `aa174a_aut2425`) 
+4. Edit everything inside the new quarter folder (e.g. `aa174a_aut2425` and `_aa174a_aut2425`) 
     to include new materials / logistics / etc. Use `rake preview` to test
     out website changes locally.
 
