@@ -118,30 +118,31 @@ order: 1
           <p>
             <b>📚 CA Office Hour Schedule</b>
             <table>
+                <table style="border-collapse: collapse; width: 100%;" border="1" cellpadding="4">
+                <tr>
+                  <th style="font-weight: bold; background-color: #f3f3f3; border: 1px solid #bbb;">CA</th>
+                  <th style="font-weight: bold; background-color: #f3f3f3; border: 1px solid #bbb;">Time</th>
+                  <th style="font-weight: bold; background-color: #f3f3f3; border: 1px solid #bbb;">Location</th>
+                </tr>
               <tr>
-                <th style="font-weight: bold; background-color: #f3f3f3;">CA</th>
-                <th style="font-weight: bold; background-color: #f3f3f3;">Time</th>
-                <th style="font-weight: bold; background-color: #f3f3f3;">Location</th>
+                <td style="border: 1px solid #bbb;">Rhea</td>
+                <td style="border: 1px solid #bbb;">Monday 5:30pm – 7:30pm</td>
+                <td style="border: 1px solid #bbb;">In-person, Durand 023</td>
               </tr>
               <tr>
-                <td>Rhea</td>
-                <td>Monday 5:30pm – 7:30pm</td>
-                <td>In-person, Durand 023</td>
+                <td style="border: 1px solid #bbb;">Aarya</td>
+                <td style="border: 1px solid #bbb;">Tuesday 11am – 1pm</td>
+                <td style="border: 1px solid #bbb;">Hybrid, Durand 353</td>
               </tr>
               <tr>
-                <td>Aarya</td>
-                <td>Tuesday 11am – 1pm</td>
-                <td>Hybrid, Durand 353</td>
+                <td style="border: 1px solid #bbb;">Purush</td>
+                <td style="border: 1px solid #bbb;">Wednesday 3pm - 5pm</td>
+                <td style="border: 1px solid #bbb;">Hybrid, Durand 353</td>
               </tr>
               <tr>
-                <td>Purush</td>
-                <td>Wednesday 3pm - 5pm</td>
-                <td>Hybrid, Durand 353</td>
-              </tr>
-              <tr>
-                <td>Jingyun</td>
-                <td>Thursday 6:30pm – 8:30pm</td>
-                <td>In-person, Skilling Lab</td>
+                <td style="border: 1px solid #bbb;">Jingyun</td>
+                <td style="border: 1px solid #bbb;">Thursday 6:30pm – 8:30pm</td>
+                <td style="border: 1px solid #bbb;">In-person, Skilling Lab</td>
               </tr>
             </table>
             <br/>
@@ -176,10 +177,6 @@ order: 1
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <h3>Schedule</h3>
-          <p>Refer to the syllabus on Canvas.</p>
-        </div>
       </div>
         <div class="row">
           <div class="col-md-12">
@@ -196,39 +193,39 @@ order: 1
             </ul>
             <h3>Tentative Schedule</h3>
             <div style="overflow-x:auto;">
-            <table border="1" cellpadding="4" style="border-collapse:collapse; min-width:700px;">
+            <table style="border-collapse:collapse; min-width:700px; width:100%;" border="1" cellpadding="4">
               <tr style="background-color:#f3f3f3; font-weight:bold;">
-                <th>Date</th>
-                <th>Topic</th>
-                <th>Homework</th>
-                <th>Lab</th>
+                <th style="border: 1px solid #bbb;">Date</th>
+                <th style="border: 1px solid #bbb;">Topic</th>
+                <th style="border: 1px solid #bbb;">Homework</th>
+                <th style="border: 1px solid #bbb;">Lab</th>
               </tr>
-              <tr><td>09/23</td><td>Course overview, perception-action loop, maps</td><td></td><td>Lab 0: Install ROS</td></tr>
-              <tr><td>09/25</td><td>Maps, Robot geometry, Coordinate frames and SE(2)/SE(3) transforms</td><td>HW1 out</td><td></td></tr>
-              <tr><td>09/30</td><td>Collision, C-space, motion models. Path planning I: A*</td><td></td><td>Lab 1: Command line, Git, Python</td></tr>
-              <tr><td>10/02</td><td>Path planning II: RRT, RRT*</td><td></td><td></td></tr>
-              <tr><td>10/07</td><td>Trajectory optimization</td><td>HW1 due, HW2 out</td><td>Lab 2: ROS basics</td></tr>
-              <tr><td>10/09</td><td>Trajectory following: PID, LQR, gain scheduled LQR</td><td></td><td></td></tr>
-              <tr><td>10/14</td><td>Robotic sensors: IMU, lidar, cameras, RGB-D. Point clouds & ICP</td><td></td><td>Lab 3: RViz, Turtlebot</td></tr>
-              <tr><td>10/16</td><td>Pinhole camera models, camera calibration</td><td>HW2 due, HW3 Out</td><td></td></tr>
-              <tr><td>10/21</td><td>Structure from Motion (SfM), features, RANSAC</td><td></td><td>Lab 4: Heading controller</td></tr>
-              <tr><td>10/23</td><td>Learning based perception, semantic perception</td><td></td><td></td></tr>
-              <tr><td>10/28</td><td>SLAM intro, factor graphs, PGO</td><td>HW3 due</td><td>Lab 5: Nav to goal</td></tr>
-              <tr><td>10/29</td><td>Midterm: 48 hour window</td><td>Midterm out</td><td></td></tr>
-              <tr><td>10/30</td><td>Pose graph opt, bundle adjustment</td><td></td><td></td></tr>
-              <tr><td>10/31</td><td>Midterm: 48 hour window window</td><td>Midterm due</td><td></td></tr>
-              <tr><td>11/04</td><td>No Lecture (Democracy Day)</td><td>HW4 out</td><td></td></tr>
-              <tr><td>11/06</td><td>Bayes Rule, RVs, Occ. mapping (Recorded Lecture, Mac traveling)</td><td></td><td></td></tr>
-              <tr><td>11/11</td><td>Occ, mapping, frontier exploration</td><td></td><td>Lab 6: Object detection</td></tr>
-              <tr><td>11/13</td><td>Gaussian RVs, Kalman Filtering, EKF, UKF</td><td>HW4 due, HW5 out</td><td></td></tr>
-              <tr><td>11/18</td><td>Particle Filtering, Monte Carlo localization</td><td></td><td>Lab 7: Frontier exploration</td></tr>
-              <tr><td>11/20</td><td>Guest Lecture</td><td></td><td></td></tr>
-              <tr><td>11/25</td><td>No lecture (Thanksgiving)</td><td></td><td></td></tr>
-              <tr><td>11/27</td><td>No lecture (Thanksgiving)</td><td></td><td></td></tr>
-              <tr><td>12/02</td><td>EKF Localization, obj tracking</td><td>HW5 due</td><td>Lab 8: Makeup</td></tr>
-              <tr><td>12/04</td><td>Advanced Topics: Imitation learning, VLAs, 3DGS for sim2real, world models</td><td></td><td></td></tr>
-              <tr><td>12/07</td><td>48 hour window take home final start</td><td>Final Exam out, 6:30pm</td><td></td></tr>
-              <tr><td>12/09</td><td>48 hour window take home final start</td><td>Final Exam due, 6:30pm</td><td></td></tr>
+              <tr><td style="border: 1px solid #bbb;">09/23</td><td style="border: 1px solid #bbb;">Course overview, perception-action loop, maps</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;">Lab 0: Install ROS</td></tr>
+              <tr><td style="border: 1px solid #bbb;">09/25</td><td style="border: 1px solid #bbb;">Maps, Robot geometry, Coordinate frames and SE(2)/SE(3) transforms</td><td style="border: 1px solid #bbb;">HW1 out</td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">09/30</td><td style="border: 1px solid #bbb;">Collision, C-space, motion models. Path planning I: A*</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;">Lab 1: Command line, Git, Python</td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/02</td><td style="border: 1px solid #bbb;">Path planning II: RRT, RRT*</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/07</td><td style="border: 1px solid #bbb;">Trajectory optimization</td><td style="border: 1px solid #bbb;">HW1 due, HW2 out</td><td style="border: 1px solid #bbb;">Lab 2: ROS basics</td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/09</td><td style="border: 1px solid #bbb;">Trajectory following: PID, LQR, gain scheduled LQR</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/14</td><td style="border: 1px solid #bbb;">Robotic sensors: IMU, lidar, cameras, RGB-D. Point clouds & ICP</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;">Lab 3: RViz, Turtlebot</td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/16</td><td style="border: 1px solid #bbb;">Pinhole camera models, camera calibration</td><td style="border: 1px solid #bbb;">HW2 due, HW3 Out</td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/21</td><td style="border: 1px solid #bbb;">Structure from Motion (SfM), features, RANSAC</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;">Lab 4: Heading controller</td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/23</td><td style="border: 1px solid #bbb;">Learning based perception, semantic perception</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/28</td><td style="border: 1px solid #bbb;">SLAM intro, factor graphs, PGO</td><td style="border: 1px solid #bbb;">HW3 due</td><td style="border: 1px solid #bbb;">Lab 5: Nav to goal</td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/29</td><td style="border: 1px solid #bbb;">Midterm: 48 hour window</td><td style="border: 1px solid #bbb;">Midterm out</td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/30</td><td style="border: 1px solid #bbb;">Pose graph opt, bundle adjustment</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">10/31</td><td style="border: 1px solid #bbb;">Midterm: 48 hour window window</td><td style="border: 1px solid #bbb;">Midterm due</td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">11/04</td><td style="border: 1px solid #bbb;">No Lecture (Democracy Day)</td><td style="border: 1px solid #bbb;">HW4 out</td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">11/06</td><td style="border: 1px solid #bbb;">Bayes Rule, RVs, Occ. mapping (Recorded Lecture, Mac traveling)</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">11/11</td><td style="border: 1px solid #bbb;">Occ, mapping, frontier exploration</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;">Lab 6: Object detection</td></tr>
+              <tr><td style="border: 1px solid #bbb;">11/13</td><td style="border: 1px solid #bbb;">Gaussian RVs, Kalman Filtering, EKF, UKF</td><td style="border: 1px solid #bbb;">HW4 due, HW5 out</td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">11/18</td><td style="border: 1px solid #bbb;">Particle Filtering, Monte Carlo localization</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;">Lab 7: Frontier exploration</td></tr>
+              <tr><td style="border: 1px solid #bbb;">11/20</td><td style="border: 1px solid #bbb;">Guest Lecture</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">11/25</td><td style="border: 1px solid #bbb;">No lecture (Thanksgiving)</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">11/27</td><td style="border: 1px solid #bbb;">No lecture (Thanksgiving)</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">12/02</td><td style="border: 1px solid #bbb;">EKF Localization, obj tracking</td><td style="border: 1px solid #bbb;">HW5 due</td><td style="border: 1px solid #bbb;">Lab 8: Makeup</td></tr>
+              <tr><td style="border: 1px solid #bbb;">12/04</td><td style="border: 1px solid #bbb;">Advanced Topics: Imitation learning, VLAs, 3DGS for sim2real, world models</td><td style="border: 1px solid #bbb;"></td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">12/07</td><td style="border: 1px solid #bbb;">48 hour window take home final start</td><td style="border: 1px solid #bbb;">Final Exam out, 6:30pm</td><td style="border: 1px solid #bbb;"></td></tr>
+              <tr><td style="border: 1px solid #bbb;">12/09</td><td style="border: 1px solid #bbb;">48 hour window take home final start</td><td style="border: 1px solid #bbb;">Final Exam due, 6:30pm</td><td style="border: 1px solid #bbb;"></td></tr>
             </table>
             </div>
           </div>
