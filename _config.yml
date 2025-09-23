@@ -40,7 +40,7 @@ plugins:
 sass:
   quiet_deps: true
 
-include: ['aa274a_aut2021', 'aa274a_aut2122', 'aa274a_aut2223', 'aa174a_aut2324', 'aa274a_aut2324', 'aa174a_aut2425', 'aa274a_aut2425', 'aa174a_aut2526']
+include: ['aa274a_aut2021', 'aa274a_aut2122', 'aa274a_aut2223', 'aa174a_aut2324', 'aa274a_aut2324', 'aa174a_aut2425', 'aa274a_aut2425', 'aa174a_aut2526', 'aa274a_aut2526']
 
 
 collections:
@@ -67,4 +67,7 @@ collections:
     permalink: /:collection/:title/
   aa174a_aut2526:
     output: false
+    permalink: /:collection/:title/
+  aa274a_aut2526:
+    output: true
     permalink: /:collection/:title/
