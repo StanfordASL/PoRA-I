@@ -33,6 +33,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      
+      # Manual Ruby installation for self-hosted runners
+      - name: Install dependencies for ruby-build
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential libssl-dev libreadline-dev zlib1g-dev libyaml-dev libffi-dev
+      
+      - name: Install ruby-build
+        run: |
+          git clone https://github.com/rbenv/ruby-build.git ~/.ruby-build
+          ~/.ruby-build/install.sh
+      
+      - name: Install Ruby
+        run: |
+          ~/.ruby-build/bin/ruby-build 3.1.0 $RUNNER_TOOL_CACHE/Ruby/3.1.0/x64
+          echo "$RUNNER_TOOL_CACHE/Ruby/3.1.0/x64/bin" >> $GITHUB_PATH
+      
       - name: Setup Ruby
         uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
         with:
