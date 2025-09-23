@@ -43,11 +43,11 @@ jobs:
       - name: Install ruby-build
         run: |
           git clone https://github.com/rbenv/ruby-build.git ~/.ruby-build
-          ~/.ruby-build/install.sh
+          sudo ~/.ruby-build/install.sh
       
       - name: Install Ruby
         run: |
-          ~/.ruby-build/bin/ruby-build 3.1.0 $RUNNER_TOOL_CACHE/Ruby/3.1.0/x64
+          ruby-build 3.1.0 $RUNNER_TOOL_CACHE/Ruby/3.1.0/x64
           echo "$RUNNER_TOOL_CACHE/Ruby/3.1.0/x64/bin" >> $GITHUB_PATH
       
       - name: Setup Ruby
