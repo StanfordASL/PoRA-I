@@ -16,28 +16,27 @@ order: 2
           <h1>Homework</h1>
         </div>
       </div>
-      <!-- {% assign sorted_hwks = site.aa174a_aut2526 | where:'md_group', "assignments" | sort: 'due_date' | reverse %}
-      {% for hwk in sorted_hwks %} -->
-      <!-- <hr /> -->
+      {% assign sorted_hwks = site.aa174a_aut2526 | where:'md_group', "assignments" | sort: 'due_date' | reverse %}
+      {% for hwk in sorted_hwks %}
+      <hr />
       <div class="row">
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-5">
-              <h2 class="aa274-homework-title"> Homework #1 </h2>
+              <h2 class="aa274-homework-title">{{ hwk.title }}</h2>
             </div>
             <div class="col-md-3">
-              <h4 class="aa274-homework-posted-date">Posted September 26 </h4>
+              <h4 class="aa274-homework-posted-date">Posted {{ hwk.posted_date | date: "%B %e" }}</h4>
             </div>
             <div class="col-md-4">
-              <h4 class="aa274-homework-due-date">Due at 11:59pm on October 10</h4>
+              <h4 class="aa274-homework-due-date">Due at {{ hwk.due_date | date: "%l:%M%P on %B %e" }}</h4>
             </div>
           </div>
-          <p>The goal of this homework is to familiarize you with some of the techniques for controlling nonholonomic wheeled robots. Please read the homework carefully.</p>
-          <p>Feel free to use this <a href="pdfs/homework/hw.tex">[Latex template]</a></p>
-          <p><a href="pdfs/homework/hw1.pdf">[pdf]</a> <a href="https://github.com/StanfordASL/AA174a-HW1">[code]</a></p>
+          <p>{{ hwk.content }}</p>
+          <p><a href="{{ hwk.pdf_link }}">[pdf]</a> <a href="{{ hwk.code_link }}">[code]</a></p>
         </div>
       </div>
-      <!-- {% endfor %} -->
+      {% endfor %}
     </div>
   </header>
   {% include javascript.html %}
