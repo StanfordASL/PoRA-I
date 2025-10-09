@@ -1,8 +1,8 @@
 ---
 title:  "Homework #1"
 seq_number: 1
-posted_date:   2024-09-27 23:59:59
-due_date:   2024-10-10 23:59:59
+posted_date:   2025-09-27 23:59:59
+due_date:   2025-10-13 23:59:59
 pdf_link: "pdfs/homework/hw1.pdf"
 code_link: "https://github.com/StanfordASL/AA174a-HW1"
 md_group: "assignments"
