@@ -2,7 +2,7 @@
 title:  "Homework #2"
 seq_number: 2
 posted_date:   2025-10-09 18:30:00
-due_date:   2025-10-17 23:59:59
+due_date:   2025-10-20 23:59:59
 pdf_link: "pdfs/homework/hw2.pdf"
 code_link: "https://github.com/StanfordASL/AA174a-HW2"
 md_group: "assignments"
