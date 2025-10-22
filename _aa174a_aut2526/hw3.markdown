@@ -2,7 +2,7 @@
 title:  "Homework #3"
 seq_number: 3
 posted_date:   2025-10-20 11:59:00
-due_date:   2023-10-31 23:59:59
+due_date:   2025-10-31 23:59:59
 pdf_link: "pdfs/homework/hw3.pdf"
 code_link: "https://github.com/StanfordASL/AA174a-HW3"
 md_group: "assignments"
