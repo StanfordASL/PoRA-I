@@ -7,18 +7,22 @@ order: 1
 <!DOCTYPE html>
 <html>
 {% include aa274a_head.html %}
-<body id="page-top" class="index">
-  {% include aa274a_navbar.html group="aa174a_aut2627" %}
+<body id="page-top" class="index has-course-hero">
+  <!-- The navbar sits inside the hero so it can float over the artwork -->
+  <div class="course-hero">
+    <img class="course-hero-img" src="{{site.baseurl}}/img/pora_abstract.webp" alt="">
+    <div class="course-hero-scrim"></div>
+    {% include aa274a_navbar.html group="aa174a_aut2627" %}
+    <div class="course-hero-text">
+      <div class="course-hero-inner">
+        <p class="course-hero-eyebrow">AA 174A / CS 137A / EE 160A</p>
+        <h1>Principles of Robot Autonomy I</h1>
+        <p class="course-hero-term">Fall 2026</p>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h4>   </h4>
-          <h1>AA 174A / CS 137A / EE 160A</h1>
-          <h1>Principles of Robot Autonomy I</h1>
-          <h4>Fall 2026</h4>
-        </div>
-      </div>
       <div class="row text-center">
         <video autoplay loop muted playsinline>
           <source src="{{site.baseurl}}/img/logos/tbot-simulation.mp4" type="video/mp4">

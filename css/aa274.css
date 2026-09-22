@@ -90,3 +90,127 @@ li > span >a:link, a:active, a:focus, .entry-title {
   justify-content: center; /* Optional, to align inner flex-items
                               horizontally within the column  */
 }
+
+/* ----- Course hero banner ----- */
+/* The artwork band at the top of the page. The navbar is moved inside this
+   band (see aa174a_aut2627/index.html) and rendered as a frosted overlay, so
+   the solid navbar blue doesn't clash with the artwork behind it. */
+.course-hero {
+  position: relative;
+  width: 100%;
+  margin: 0 0 35px 0;
+  overflow: hidden;
+  background-color: #061024;
+}
+
+/* Sits behind everything; the band's height comes from the navbar + title */
+.course-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Darkens the left side (for the title) and the top edge (for the nav links)
+   so the white type stays legible over the artwork */
+.course-hero-scrim {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom,
+                              rgba(6, 16, 36, 0.50) 0%,
+                              rgba(6, 16, 36, 0.15) 30%,
+                              rgba(6, 16, 36, 0.00) 55%),
+              linear-gradient(to right,
+                              rgba(6, 16, 36, 0.88) 0%,
+                              rgba(6, 16, 36, 0.70) 35%,
+                              rgba(6, 16, 36, 0.25) 70%,
+                              rgba(6, 16, 36, 0.10) 100%);
+}
+
+.course-hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 55px 0 65px 0;
+}
+
+/* Lines the title up with the 1000px body content below (1000 + 2 x 20 padding) */
+.course-hero-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.course-hero-eyebrow {
+  margin: 0 0 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #A9C8F2;
+}
+
+.course-hero-inner h1 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.15;
+  color: #FFFFFF;
+}
+
+.course-hero-term {
+  display: inline-block;
+  margin: 16px 0 0 0;
+  padding-top: 14px;
+  border-top: 2px solid rgba(255, 255, 255, 0.35);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+/* ----- Transparent navbar, only on pages that opt in with .has-course-hero ----- */
+/* Everywhere else the navbar keeps its solid blue. */
+.has-course-hero .navbar-default {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Keeps the demo clip from overflowing the viewport on narrow screens */
+header video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .course-hero-text {
+    padding: 35px 0 45px 0;
+  }
+  .course-hero-inner h1 {
+    font-size: 24px;
+  }
+  .course-hero-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+  }
+  .course-hero-term {
+    margin-top: 12px;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  /* Artwork is busier when narrow, so darken further across the whole band */
+  .course-hero-scrim {
+    background: linear-gradient(to right,
+                                rgba(6, 16, 36, 0.90) 0%,
+                                rgba(6, 16, 36, 0.78) 55%,
+                                rgba(6, 16, 36, 0.55) 100%);
+  }
+}
