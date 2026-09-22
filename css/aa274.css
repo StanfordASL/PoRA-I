@@ -91,12 +91,16 @@ li > span >a:link, a:active, a:focus, .entry-title {
                               horizontally within the column  */
 }
 
-/* Course scene image at the top of the page (replaces the old sim clip) */
+/* Course scene image at the top of the page (replaces the old sim clip).
+   The artwork is nearly square, so max-height is what actually constrains it on
+   a desktop window; max-width takes over once the container is narrower. */
 .aa274-course-image {
   display: block;
-  width: 100%;
-  max-width: 640px;
-  height: auto;
+  /* Both maxima with width/height left auto, so the browser scales the image
+     proportionally to fit inside them. Setting an explicit width here instead
+     would let max-height squash the aspect ratio. */
+  max-width: 100%;
+  max-height: 420px;
   margin: 0 auto 10px auto;
   border-radius: 6px;
 }
