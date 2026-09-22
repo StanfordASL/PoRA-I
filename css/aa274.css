@@ -90,3 +90,13 @@ li > span >a:link, a:active, a:focus, .entry-title {
   justify-content: center; /* Optional, to align inner flex-items
                               horizontally within the column  */
 }
+
+/* Course scene image at the top of the page (replaces the old sim clip) */
+.aa274-course-image {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 0 auto 10px auto;
+  border-radius: 6px;
+}
