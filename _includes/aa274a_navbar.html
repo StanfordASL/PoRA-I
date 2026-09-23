@@ -56,3 +56,9 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+{% if include.group != site.current_quarter %}
+<div class="alert alert-warning text-center" style="margin: 0; border-radius: 0;">
+    This is an archived page from a previous offering.
+    <a href="{{ '/' | append: site.current_quarter | append: '/' | relative_url }}"><strong>Go to the current course website &rarr;</strong></a>
+</div>
+{% endif %}
