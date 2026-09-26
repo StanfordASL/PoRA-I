@@ -22,6 +22,7 @@
 .weekly-calendar .tick:first-child {transform:translateY(2px)}
 .weekly-calendar .half {color:#8b95a4;font-size:9px}
 .weekly-calendar .event {position:absolute;left:3px;right:3px;padding:4px 6px;border-radius:4px;border-left:3px solid var(--color);background:var(--bg);color:var(--ink);font-size:11px;line-height:14px}
+.weekly-calendar .event.compact {padding-top:2px;padding-bottom:2px}
 .weekly-calendar .class {--color:#3265ac;--bg:#e8eff9;--ink:#244b80}
 .weekly-calendar .office_hours {--color:#18735a;--bg:#e4f3ec;--ink:#195a46}
 .weekly-calendar .section {--color:#746247;--bg:#f4f0e8;--ink:#594b36}
