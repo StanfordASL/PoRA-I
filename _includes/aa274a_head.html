@@ -29,6 +29,10 @@
     <!-- AA 274 CSS -->
     <link rel="stylesheet" href="{{site.baseurl}}/css/aa274.css">
 
+    {% if page.url == '/aa274a_aut2627/calendar/' %}
+    <link rel="stylesheet" href="{{ '/aa274a_aut2627/calendar.css' | relative_url }}">
+    {% endif %}
+
     <!-- Analytics -->
     {% if jekyll.environment == 'production' %}
     <!-- Global site tag (gtag.js) - Google Analytics -->

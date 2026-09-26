@@ -1,0 +1,77 @@
+/* Scoped to the Autumn 2026 weekly calendar. The shared course theme supplies fonts. */
+.weekly-calendar { margin-top: 30px; margin-bottom: 30px; text-align: left; }
+
+.weekly-calendar .calendar-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
+.weekly-calendar h1 {font-size:23px;letter-spacing:-.6px;margin:0 0 3px}
+.weekly-calendar .calendar-heading p {margin:0;color:#637084;font-size:11px}
+.weekly-calendar .tools {display:flex;align-items:center;gap:18px}
+.weekly-calendar .legend {display:flex;gap:14px;font-size:11px}
+.weekly-calendar .legend span {display:flex;align-items:center;gap:5px}
+.weekly-calendar .dot {height:8px;width:8px;border-radius:2px;background:var(--color)}
+.weekly-calendar button {font:inherit;font-size:12px;border:1px solid #d8dde5;background:white;padding:6px 10px;border-radius:5px;cursor:pointer}
+.weekly-calendar .scroll {overflow-x:auto;background:white;border:1px solid #dce1e8;border-radius:7px}
+.weekly-calendar .calendar {min-width:960px}
+.weekly-calendar .days, .weekly-calendar .body {display:grid;grid-template-columns:66px repeat(5,minmax(0,1fr))}
+.weekly-calendar .days {background:#f8f9fc;border-bottom:1px solid #dce1e8}
+.weekly-calendar .days div {padding:9px 5px;text-align:center;font-weight:bold;border-left:1px solid #e5e9ef}
+.weekly-calendar .days div:first-child {border:0;color:#778397;font-size:10px}
+.weekly-calendar .body {height:638px}
+.weekly-calendar .column {height:624px;position:relative;border-left:1px solid #e1e6ed;background:repeating-linear-gradient(to bottom,transparent 0,transparent 23px,#edf0f5 23px,#edf0f5 24px)}
+.weekly-calendar .times {position:relative}
+.weekly-calendar .tick {position:absolute;right:8px;font-size:10px;line-height:12px;transform:translateY(-50%);white-space:nowrap;color:#546174}
+.weekly-calendar .tick:first-child {transform:translateY(2px)}
+.weekly-calendar .half {color:#8b95a4;font-size:9px}
+.weekly-calendar .event {position:absolute;left:3px;right:3px;padding:4px 6px;border-radius:4px;border-left:3px solid var(--color);background:var(--bg);color:var(--ink);font-size:11px;line-height:14px}
+.weekly-calendar .class {--color:#3265ac;--bg:#e8eff9;--ink:#244b80}
+.weekly-calendar .office_hours {--color:#18735a;--bg:#e4f3ec;--ink:#195a46}
+.weekly-calendar .section {--color:#746247;--bg:#f4f0e8;--ink:#594b36}
+.weekly-calendar .event-head {display:flex;align-items:baseline;justify-content:space-between;gap:3px}
+.weekly-calendar .event h2 {font-size:12px;line-height:15px;margin:0;font-weight:750}
+.weekly-calendar .event-head span {font-size:9px;white-space:nowrap;opacity:.8}
+.weekly-calendar .event-time {font-size:10px;font-weight:bold;line-height:13px}
+.weekly-calendar .event b {font-weight:600}
+.weekly-calendar .event a {color:inherit;display:inline-block;font-size:11px;line-height:14px;font-weight:bold;text-decoration:underline;text-underline-offset:2px}
+.weekly-calendar .calendar-note {color:#778397;font-size:10px;margin-top:7px}
+
+.weekly-calendar .event h2 { color: inherit; }
+
+.weekly-calendar .calendar-heading h1 { font-size: 28px; }
+
+.weekly-calendar .calendar-note { font-size: 11px; margin: 8px 0 0; }
+
+.weekly-calendar a:focus-visible, .weekly-calendar button:focus-visible, .weekly-calendar .scroll:focus-visible { outline: 2px solid #3265ac; outline-offset: 2px; }
+
+@media (max-width: 767px) {
+  .weekly-calendar { margin-top: 20px; padding-left: 12px; padding-right: 12px; }
+
+  .weekly-calendar .calendar-heading { align-items: flex-start; flex-direction: column; gap: 10px; }
+
+  .weekly-calendar .tools { width: 100%; justify-content: space-between; }
+
+  .weekly-calendar .calendar-heading h1 { font-size: 24px; }
+
+}
+
+@media print {
+  @page { size: A4 landscape; margin: 8mm; }
+
+  body { background: white; }
+
+  nav, body > footer, .weekly-calendar button { display: none !important; }
+
+  .weekly-calendar { width: 100%; margin: 0; padding: 0; }
+
+  .weekly-calendar .calendar { min-width: 0; }
+
+  .weekly-calendar .scroll { overflow: visible; }
+
+  .weekly-calendar .event { print-color-adjust: exact; -webkit-print-color-adjust: exact; font-size: 10px; }
+
+  .weekly-calendar .event-head span { font-size: 8px; }
+
+  .weekly-calendar .calendar-heading h1 { font-size: 20px; }
+
+  .weekly-calendar .calendar-note { display: none; }
+
+}
+
