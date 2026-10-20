@@ -1,7 +1,7 @@
 ---
 title:  "Homework #2"
 seq_number: 2
-posted_date:   2026-10-09 18:30:00
+posted_date:   2026-10-06 18:30:00
 due_date:   2026-10-19 23:59:59
 pdf_link: "pdfs/homework/hw2.pdf"
 code_link: "https://github.com/StanfordASL/AA174a-HW2"
